@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="search" method="upgrade">
+	<name>plg_search_osticky2</name>
+	<author>Alex Polonski</author>
+	<creationDate>2012-2014</creationDate>
+	<copyright>Copyright (C) 2012 - 2014 - Alex Polonski. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alex3493@yandex.ru</authorEmail>
+	<authorUrl>polonski.16mb.com</authorUrl>
+	<version>2.0</version>
+	<description>PLG_SEARCH_OSTICKY2_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="osticky2">osticky2.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+
+			<fieldset name="basic">
+				<field name="search_limit" type="text"
+					default="50"
+					description="PLG_SEARCH_OSTICKY2_FIELD_SEARCHLIMIT_DESC"
+					label="PLG_SEARCH_CONTENT_FIELD_SEARCHLIMIT_LABEL"
+					size="5"
+				/>
+
+				<field name="search_tickets" type="radio"
+					class="radio btn-group"
+					default="1"
+					description="PLG_SEARCH_OSTICKY2_FIELD_TICKETS_DESC"
+					label="PLG_SEARCH_OSTICKY2_FIELD_TICKETS_LABEL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+
+				<field name="search_messages" type="radio"
+					class="radio btn-group"
+					default="1"
+					description="PLG_SEARCH_OSTICKY2_FIELD_MESSAGES_DESC"
+					label="PLG_SEARCH_OSTICKY2_FIELD_MESSAGES_LABEL"
+				>
+					<option value="0">JOFF</option>
+					<option value="1">JON</option>
+				</field>
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>

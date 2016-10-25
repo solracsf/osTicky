@@ -1,0 +1,261 @@
+@CHARSET "UTF-8";
+
+/* Forms and fieldsets */
+
+#osticky_main fieldset.osticky-ticket,
+#osticky_main fieldset.osticky-ticket-new,
+#osticky_main fieldset.osticky-thread,
+#osticky_main fieldset.osticky-message {
+	padding:0 0 1em;
+	margin:0 1em;
+}
+#osticky_main fieldset.osticky-ticket {
+	line-height:1.4;
+}
+#osticky_main fieldset.osticky-ticket,
+#osticky_main fieldset.osticky-thread,
+#osticky_main .osticky-thread form {
+	/*max-width: 45em;*/
+	word-wrap: break-word;	
+}
+#osticky_main td.item-subject {
+	max-width: 10em;
+	word-wrap: break-word;	
+}
+#osticky_main fieldset.osticky-ticket legend,
+#osticky_main fieldset.osticky-ticket-new legend,
+#osticky_main fieldset.osticky-thread legend,
+#osticky_main fieldset.osticky-message legend {
+	font-size:140%;
+}
+#osticky_main div.osticky-ticket-info-main {
+	font-size:110%;
+	margin-bottom:10px;
+	border-bottom:1px solid #CCCCCC;
+}
+#osticky_main div.osticky-ticket-info-details,
+#osticky_main div.osticky-ticket-info-dates {
+	margin:2%;
+}
+#osticky_main fieldset.osticky-ticket dt,
+#osticky_main fieldset.osticky-message-reply dt {
+	font-weight:bold;
+}
+#osticky_main fieldset.osticky-ticket dt/*, *** "dl"-s used only in ticket details view
+#osticky_main fieldset.osticky-message-reply dt,
+#osticky_main fieldset.osticky-ticket-new dt,
+#osticky_main fieldset.osticky-message dt*/ {
+	clear:left;
+	float:left;
+	width:12em;
+}
+#osticky_main fieldset.filters {
+	margin-bottom:1em;
+	padding:0.5em;
+}
+#osticky_main fieldset.filters button {
+	margin:2px 2px 0;
+}
+
+#osticky_main div.filter {
+	margin-bottom:10px;
+}
+
+#osticky_main table {
+	width:100%;
+}
+#osticky_main th, #osticky_main td {
+	padding:1px 5px;
+}
+
+#osticky_main .fieldset-desc {
+	font-style: italic;
+	opacity: 0.7;
+}
+
+/* Thread messages */
+
+#osticky_main .osticky-message-info div {
+	padding:5px;
+}
+#osticky_main div.osticky-message {
+	background-color:#C3D9FF;
+}
+#osticky_main div.osticky-response {
+	background-color:#FFE0B3;
+}
+#osticky_main div.osticky-message-text {
+	border:1px solid #CCCCCC;
+	margin: 2px 0;
+}
+#osticky_main div.msg-highlight {
+	border-left: solid 8px #888;
+	margin: 10px 0;
+	font-weight:bold;
+}
+
+/* Input */
+
+#osticky_main .osticky-ticket-form select, #osticky_main .osticky-message-reply select {
+	width: auto;
+	min-width: 220px;
+}
+
+#osticky_main input.readonly, #osticky_main select.readonly {
+	border: 0 none;
+	/*background-color: #FFFFFF*/;
+    color: #666666;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-top: 1px;
+}
+#osticky_main input.readonly:focus, #osticky_main select.readonly:focus {
+	border: 0 none;
+}
+#osticky_main label.filter-search-lbl + input, label.filter-status-lbl + select {
+	margin: 0 10px 0 5px;
+}
+
+/*
+#osticky_main fieldset.osticky-message textarea,
+#osticky_main fieldset.osticky-message-reply textarea {
+	width:100%;
+}
+*/
+#osticky_main textarea {
+	width:95%;
+}
+
+/* no "dl" in the new layout
+#osticky_main fieldset.osticky-ticket-new dd,  #osticky_main fieldset.osticky-message dd, #osticky_main fieldset.osticky-message-reply dd {
+	width:90%;
+	float:left;
+	margin:0;
+	padding:0;
+}
+#osticky_main fieldset.osticky-ticket-new dd input {
+	width:auto;
+}
+#osticky_main fieldset.osticky-ticket-new dd label {
+	display:inline;
+}
+*/
+
+/* Tickets list icons and links */
+
+#osticky_main td.item-ticketID a { margin-left: 20px; }
+#osticky_main td.ticket-web-icon { background:url(../images/icons/ticket_source_web.gif) 2px center no-repeat; }
+#osticky_main td.ticket-email-icon { background:url(../images/icons/ticket_source_email.gif) 2px center no-repeat; }
+#osticky_main td.ticket-phone-icon { background:url(../images/icons/ticket_source_phone.gif) 2px center no-repeat; }                
+#osticky_main td.ticket-other-icon { background:url(../images/icons/ticket_source_other.gif) 2px center no-repeat; }
+#osticky_main td.attachment-icon { background: url(../images/icons/attachment.gif) right center no-repeat; }
+
+#osticky_main .item-subject a.ticket-sticky {
+	text-decoration:none;
+}
+#osticky_main a.icon-link:link,
+#osticky_main a.icon-link:visited,
+#osticky_main a.icon-link:hover,
+#osticky_main a.icon-link:active,
+#osticky_main a.icon-link:focus	
+{
+	text-decoration:none;
+	background-color:transparent;
+	color:#0A5E69;
+	display:inline;
+	width:auto;
+	height:auto;
+	line-height:1em;
+}
+#osticky_main a.icon-link:hover
+{
+	text-decoration:underline;
+}
+#osticky_main a.no-text:hover
+{
+	text-decoration:none;
+}
+#osticky_main a.tickets-refresh
+{	
+	padding-right:18px; margin-right:20px;
+	background-image:url(../images/icons/refresh.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position: right center !important;
+}
+#osticky_main a.ticket-sticky
+{
+	padding-right:18px; margin-right:20px;
+	background-image:url(../images/ticket_status.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position: right center !important;
+}
+#osticky_main a.message-attachment
+{
+	padding-left: 16px; font-weight: bold;
+	background-image:url(../images/icons/attachment.gif) !important;
+	background-repeat:no-repeat !important;
+	background-position: left center !important;
+}	
+#osticky_main fieldset.osticky-ticket legend {
+    padding-left: 24px;
+    background: url(../images/icons/ticket.gif) 4px center no-repeat;
+}
+fieldset.osticky-ticket-new legend {
+    padding-left: 24px;
+    background: url(../images/new_ticket.gif) 4px center no-repeat;
+}
+#osticky_main fieldset.osticky-thread legend, fieldset.osticky-message legend {
+    padding-left: 24px;
+    background: url(../images/icons/thread.gif) 4px center no-repeat;
+}
+#osticky_main fieldset.osticky-thread legend a img {
+	margin-left:4px;
+}
+
+/* Misc */
+
+#osticky_main div.osticky-plugin-info {
+	font-size:0.9em;
+	color:#444;
+	text-align:right;
+}
+#osticky_main div.osticky-plugin-info ul {
+	list-style:none;
+}
+.clearboth {
+	clear:both;
+}
+p.error {
+	color:#044b63;
+	background:#eee;
+	border-top:3px solid #044b63;
+	border-bottom:3px solid #044b63;
+}
+
+.invalid {
+	border-color:#FF0000;
+}
+label.invalid {
+	color:#FF0000;
+}
+
+/* Copy protostar input size-related styles */
+.input-mini {
+	width: 60px;
+}
+.input-small {
+	width: 90px;
+}
+.input-medium {
+	width: 150px;
+}
+.input-large {
+	width: 210px;
+}
+.input-xlarge {
+	width: 270px;
+}
+.input-xxlarge {
+	width: 530px;
+}

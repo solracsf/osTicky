@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="authentication"  method="upgrade">
+	<name>plg_authentication_osticket2</name>
+	<author>Alex Polonski</author>
+	<creationDate>2014</creationDate>
+	<copyright>Copyright (C) 2012 - 2014 - Alex Polonski. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alex3493@yandex.ru</authorEmail>
+	<authorUrl>polonski.16mb.com</authorUrl>
+	<version>2.1.1</version>
+	<description>PLG_AUTHENTICATION_OSTICKET2_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="osticket2">osticket2.php</filename>
+		<filename>index.html</filename>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="use_full_name" type="radio"
+					default="1"
+					class="radio btn-group"
+					description="PLG_AUTHENTICATION_OSTICKET2_FIELD_USE_FULL_NAME_DESC"
+					label="PLG_AUTHENTICATION_OSTICKET2_FIELD_USE_FULL_NAME_LABEL"
+				>
+					<option value="0">JNo</option>
+					<option value="1">JYes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

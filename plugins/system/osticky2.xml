@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>plg_system_osticky2</name>
+	<author>Alex Polonski</author>
+	<creationDate>2012-2014</creationDate>
+	<copyright>Copyright (C) 2012 - 2014 - Alex Polonski. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alex3493@yandex.ru</authorEmail>
+	<authorUrl>polonski.16mb.com</authorUrl>
+	<version>2.0.10</version>
+	<description>PLG_SYSTEM_OSTICKY2_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="osticky2">osticky2.php</filename>
+		<filename>index.html</filename>
+		<filename>create.js</filename>
+		<filename>note.js</filename>
+		<filename>style.css</filename>
+		<folder>language</folder>
+		<folder>images</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">		
+				<field
+					name="user_groups_from"
+					type="usergroup"
+					multiple="true"
+					size="10"
+					label="PLG_OSTICKY_USER_GROUPS_FROM"
+					description="PLG_OSTICKY_USER_GROUPS_FROM_DESC"
+					default="" />	
+				<field
+					name="mouse"
+					type="list"
+					label="PLG_OSTICKY_MOUSE_ACTIVATION"
+					description="PLG_OSTICKY_MOUSE_ACTIVATION_DESC"
+					default="alt+click">
+						<option value="control+click">PLG_OSTICKY_OPTION_MOUSE_CTRL_CLICK</option>
+						<option value="control+alt+click">PLG_OSTICKY_OPTION_MOUSE_CTRL_ALT_CLICK</option>
+						<option value="alt+click">PLG_OSTICKY_OPTION_MOUSE_ALT_CLICK</option>
+						<option value="shift+click">PLG_OSTICKY_OPTION_MOUSE_SHIFT_CLICK</option>
+						<option value="shift+alt+click">PLG_OSTICKY_OPTION_MOUSE_SHIFT_ALT_CLICK</option>
+						<option value="shift+control+click">PLG_OSTICKY_OPTION_MOUSE_SHIFT_CTRL_CLICK</option>
+				</field>
+	 			<field
+					name="toggle"
+					type="list"
+					label="PLG_OSTICKY_KEYBOARD_TOGGLE"
+					description="PLG_OSTICKY_KEYBOARD_TOGGLE_DESC"
+					default="control+alt+h">
+						<option value="none">JNONE</option>
+						<option value="control+alt+h">PLG_OSTICKY_OPTION_KEYBOARD_TOGGLE_CTRL_ALT_H</option>
+				</field>
+	  		</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_osticky2_ticket_view_default_title" option="com_osticky2_ticket_view_default_option">
+		<message>
+			<![CDATA[com_osticky2_ticket_view_default_desc]]>
+		</message>
+	</layout>
+	
+	<fields name="params">
+		<fieldset name="help_topic" 
+			label="COM_OSTICKY_CREATE_TICKET_MENU_HELPTOPIC"
+			addfieldpath="/components/com_osticky2/models/fields">
+
+			<field name="preselected_topic_id" type="helptopic"
+				description="COM_OSTICKY_TICKET_PRESELECTED_HELPTOPIC_DESC"
+				label="COM_OSTICKY_TICKET_PRESELECTED_HELPTOPIC_LABEL"
+				default=""
+				translate="true"
+				hide_private="1"
+				key_field="topic_id"
+				value_field="topic">
+				<option value="">COM_OSTICKY_TICKET_MENU_PRESELECTED_TOPIC_OPTION_NONE</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</metadata>

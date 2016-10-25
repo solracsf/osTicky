@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset addfieldpath="/administrator/components/com_osticky2/fields"
+		name="database"
+		label="COM_OSTICKY_DATABASE_LABEL"
+		description="COM_OSTICKY_DATABASE_DESC">
+		<field
+			name="spacer"
+			type="spacer" 
+			label="COM_OSTICKY_GENERAL_DATABASE_OPTIONS_LABEL"
+			description="COM_OSTICKY_GENERAL_DATABASE_OPTIONS_DESC"
+			class="spacer" />	
+		<field
+			name="database_select"
+			type="radio"
+			class="radio btn-group"
+			label="COM_OSTICKY_DATABASE_SELECT_LABEL"
+			description="COM_OSTICKY_DATABASE_SELECT_DESC"
+			default="1">
+				<option value="1">COM_OSTICKY_OPTION_DATABASE_JOOMLA</option>
+				<option value="2">COM_OSTICKY_OPTION_DATABASE_EXTERNAL</option>
+		</field>
+		<field
+			name="prefix"
+			type="text"
+			class="input-mini"
+			label="COM_OSTICKY_EXT_DATABASE_PREFIX_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_PREFIX_DESC"
+			size="8"
+			default="ost_" />
+		<field
+			name="cfg_namespace"
+			type="ostconfig"
+			label="COM_OSTICKY_OST_CONFIG_ID_LABEL"
+			description="COM_OSTICKY_OST_CONFIG_ID_DESC" />
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true" />
+		<field
+			name="spacer2"
+			type="spacer" 
+			label="COM_OSTICKY_EXTERNAL_DATABASE_OPTIONS_LABEL"
+			description="COM_OSTICKY_EXTERNAL_DATABASE_OPTIONS_DESC"
+			class="spacer" />	
+		<field
+			name="driver"
+			type="list"
+			label="COM_OSTICKY_EXT_DATABASE_DRIVER_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_DRIVER_DESC"
+			default="mysqli">
+				<option value="mysqli">mysqli</option>
+		</field>
+		<field
+			name="host"
+			type="text"
+			label="COM_OSTICKY_EXT_DATABASE_HOST_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_HOST_DESC"
+			size="50"
+			default="localhost" />
+		<field
+			name="user"
+			type="text"
+			label="COM_OSTICKY_EXT_DATABASE_USER_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_USER_DESC"
+			size="50"
+			default="" />
+		<field
+			name="password"
+			type="text"
+			label="COM_OSTICKY_EXT_DATABASE_PASSWORD_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_PASSWORD_DESC"
+			size="50"
+			default="" />
+		<field
+			name="database"
+			type="text"
+			label="COM_OSTICKY_EXT_DATABASE_DATABASE_LABEL"
+			description="COM_OSTICKY_EXT_DATABASE_DATABASE_DESC"
+			size="50"
+			default="" />
+	</fieldset>
+	<fieldset addfieldpath="/components/com_osticky2/models/fields"
+		name="frontend"
+		label="COM_OSTICKY_FRONTEND_OPTIONS_LABEL"
+		description="COM_OSTICKY_FRONTEND_OPTIONS_DESC">
+		<field
+			name="editor"
+			type="plugins"
+			folder="editors"
+			default=""
+			label="COM_OSTICKY_HTML_EDITOR_LABEL"
+			description="COM_OSTICKY_HTML_EDITOR_DESC">
+			
+			<option value="">JOPTION_USE_DEFAULT</option>
+		</field>
+		<field
+			name="spacer6"
+			type="spacer"
+			hr="true" />
+		<field
+			name="spacer4"
+			type="spacer" 
+			label="COM_OSTICKY_TICKET_SYSTEM_INFO_LABEL"
+			description="COM_OSTICKY_TICKET_SYSTEM_INFO_DESC"
+			class="spacer" />	
+		<field name="send_client_info" type="radio"
+			label="COM_OSTICKY_TICKET_SEND_CLIENT_INFO_LABEL"
+			description="COM_OSTICKY_TICKET_SEND_CLIENT_INFO_DESC"
+			class="radio btn-group"
+			default="0">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+		</field>
+		<field name="system_info_attach" type="radio"
+			label="COM_OSTICKY_TICKET_SYSTEM_INFO_ATTACH_LABEL"
+			description="COM_OSTICKY_TICKET_SYSTEM_INFO_ATTACH_DESC"
+			class="radio btn-group"
+			default="1">
+				<option value="1">COM_OSTICKY_OPTION_SYSINFO_APPEND</option>
+				<option value="2">COM_OSTICKY_OPTION_SYSINFO_ATTACH</option>
+		</field>
+		<field
+			name="spacer9"
+			type="spacer"
+			hr="true" />
+		<field
+			name="spacer10"
+			type="spacer" 
+			label="COM_OSTICKY_TICKET_HELPTOPICS_LABEL"
+			description="COM_OSTICKY_TICKET_HELPTOPICS_DESC"
+			class="spacer" />
+		<field	
+			name="sticky_topic_id" 
+			type="helptopic"
+			description="COM_OSTICKY_TICKET_STICKY_HELPTOPIC_DESC"
+			label="COM_OSTICKY_TICKET_STICKY_HELPTOPIC_LABEL"
+			default=""
+			translate="true"
+			hide_private="1"
+			key_field="topic_id"
+			value_field="topic">
+				<option value="">COM_OSTICKY_TICKET_MENU_PRESELECTED_TOPIC_OPTION_NONE</option>
+		</field>
+		<field
+			name="show_private_topics"
+			label="COM_OSTICKY_OSTICKET_PRIVATE_TOPICS_LABEL"
+			description="COM_OSTICKY_OSTICKET_PRIVATE_TOPICS_DESC"
+			type="usergroup"
+			multiple="true"
+			size="10"
+			default="">
+		</field>
+		<field
+			name="spacer7"
+			type="spacer"
+			hr="true" />
+		<field
+			name="spacer5"
+			type="spacer" 
+			label="COM_OSTICKY_TICKETS_LIST_LABEL"
+			description="COM_OSTICKY_TICKETS_LIST_DESC"
+			class="spacer" />	
+		<field name="show_headings" type="list"
+			description="JGLOBAL_SHOW_HEADINGS_DESC"
+			label="JGLOBAL_SHOW_HEADINGS_LABEL"
+			default="1">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		<field name="show_pagination" type="list"
+			description="JGLOBAL_PAGINATION_DESC"
+			label="JGLOBAL_PAGINATION_LABEL"
+			default="2">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+				<option value="2">JGLOBAL_AUTO</option>
+		</field>
+		<field	name="show_pagination_limit" type="list"
+			label="JGLOBAL_DISPLAY_SELECT_LABEL"
+			description="JGLOBAL_DISPLAY_SELECT_DESC"
+			default="1">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+		<field name="show_pagination_results" type="list"
+			label="JGLOBAL_PAGINATION_RESULTS_LABEL"
+			description="JGLOBAL_PAGINATION_RESULTS_DESC"
+			default="1">
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+		</field>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_osticky2"
+			section="component">
+			<action
+				name="core.admin"
+				title="JACTION_ADMIN"
+				description="JACTION_ADMIN_COMPONENT_DESC" />
+			<action
+				name="core.manage"
+				title="JACTION_MANAGE"
+				description="JACTION_MANAGE_COMPONENT_DESC" />
+			<action 
+				name="osticky.create"
+				title="COM_OSTICKY_TICKET_CREATE"
+				description="COM_OSTICKY_TICKET_CREATE_DESC" />
+			<action 
+				name="osticky.reply"
+				title="COM_OSTICKY_MESSAGE_REPLY"
+				description="COM_OSTICKY_MESSAGE_REPLY_DESC" />
+		</field>
+	</fieldset>
+</config>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset name="ticket_id">
+		<field name="ticket_id"
+			type="hidden"
+		/>
+	</fieldset>
+	<fieldset
+		addrulepath="/components/com_osticky2/models/rules" 
+		name="message" label="COM_OSTICKY_MESSAGE_FORM_LABEL">
+		
+		<field name="body"
+			type="editor"
+			id="osticky-message"
+			description="COM_OSTICKY_MESSAGE_TEXT_DESC"
+			label="COM_OSTICKY_MESSAGE_TEXT_LABEL"
+			filter="JComponentHelper::filterText"
+			validate="nonempty"
+			class="inputbox"
+			hide="readmore,pagebreak,image,article"
+			buttons="no"
+			required="true"
+		/>
+		
+	</fieldset>
+	<fieldset 
+		addrulepath="/components/com_osticky2/models/rules"
+		name="file_upload">
+		<field name="filedata"
+			label="COM_OSTICKY_FILE_UPLOAD_LABEL"
+			description="COM_OSTICKY_FILE_UPLOAD_DESC"
+			type="attachments"
+			validate="file"
+			message_size="COM_OSTICKY_FILE_UPLOAD_ERROR_SIZE"
+			message_type="COM_OSTICKY_FILE_UPLOAD_ERROR_TYPE"
+		/>
+	</fieldset>
+</form>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>com_osticky2</name>
+	<author>Alex Polonski</author>
+	<creationDate>2012-2014</creationDate>
+	<copyright>(C) 2012 - 2014 - Alex Polonski. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alex3493@yandex.ru</authorEmail>
+	<authorUrl>http://smartcalc.es/J3</authorUrl>
+	<version>2.2.8</version>
+	<description>COM_OSTICKY2_XML_DESCRIPTION</description>
+	<administration>
+        <menu>COM_OSTICKY2</menu>
+		<files folder="admin">
+			<filename>controller.php</filename>
+			<filename>osticky2.php</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<folder>views</folder>
+			<folder>tables</folder>
+			<folder>fields</folder>
+			<folder>helpers</folder>
+			<folder>language</folder>
+		</files>
+	</administration>
+	<files>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<filename>osticky2.php</filename>
+		<filename>router.php</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+	</files>
+    <scriptfile>install.script.php</scriptfile>
+    
+	<updateservers>
+		<server type="extension" priority="1" name="osTicky2 Update Site">http://smartcalc.es/updates/osticky21-update.xml</server>
+	</updateservers>
+</extension>
+

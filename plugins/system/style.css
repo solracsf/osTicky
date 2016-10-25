@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+.plg_osticky2_note
+{
+	padding:3px;
+	font-size:80%;
+	background-color:#eee;
+	z-index:9000;
+	border:solid 1px;
+	text-align:left;
+	position:relative;
+}
+
+.plg_osticky_target_show
+{
+	outline: dotted 2px red;
+	[if IE 7] border: dotted 2px red;
+	[if IE 7] margin: -2px;
+}
+
+div.plg_osticky2_note_subject {
+	padding-right:16px;
+	font-weight:bold;
+}
+
+/* ADD FLOATING NOTE SPECIFIC STYLE */
+
+a.plg_osticky2_note_close:link,
+a.plg_osticky2_note_close:visited,
+a.plg_osticky2_note_close:hover,
+a.plg_osticky2_note_close:active,
+a.plg_osticky2_note_close:focus {
+	background: url("images/remove.png") right center no-repeat transparent;
+	text-decoration: none;
+	display:block;
+	width:auto;
+	padding-left:16px;
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.plg_osticky2_note div {
+	border-bottom:solid 1px #ddd;
+	padding-bottom:2px;
+}
+.plg_osticky2_note div:last-child {
+	border-bottom:none;
+	padding-bottom:0;
+}
+
+.plg_osticky2_note span.date {
+	white-space:nowrap;
+}
+
+.plg_osticky2_note.answered .plg_osticky2_note_activity {
+	font-weight:bold;
+}

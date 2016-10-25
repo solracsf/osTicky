@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="user" method="upgrade">
+	<name>plg_user_osticketprofile2</name>
+	<author>Alex Polonski</author>
+	<creationDate>2014</creationDate>
+	<copyright>Copyright (C) 2012 - 2014 - Alex Polonski. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>alex3493@yandex.ru</authorEmail>
+	<authorUrl>smartcalc.es</authorUrl>
+	<version>2.0.14</version>
+	<description>PLG_USER_OSTICKETPROFILE2_XML_DESCRIPTION</description>
+
+	<files>
+		<filename plugin="osticketprofile2">osticketprofile2.php</filename>
+		<filename>index.html</filename>
+		<filename>osticketprofile2.xml</filename>
+		<folder>language</folder>
+        <folder>rules</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_on_registration"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_USER_OSTICKETPROFILE2_CONFIG_SHOW_ON_REGISTRATION_LABEL"
+					description="PLG_USER_OSTICKETPROFILE2_CONFIG_SHOW_ON_REGISTRATION_DESC"
+				>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
