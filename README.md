@@ -31,6 +31,8 @@ osTicky version 2.x was significantly rewritten in order to provide support for 
 
 A working installation of **osTicket 1.9.4 or later** is required before osTicky 2.x can be configured.
 
+Download the latest version from https://github.com/acs-ferreira/osTicky/releases/latest and Upload/Install it trough Joomla Installer.
+
 You will need the following data in order to configure osTicky:
 
 * osTicket database host
